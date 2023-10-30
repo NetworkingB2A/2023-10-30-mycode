@@ -23,4 +23,3 @@
     - name: Display results
       ansible.builtin.debug:
         var: results
-
