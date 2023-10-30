@@ -1,0 +1,15 @@
+name: ansible playbook linting
+
+on:
+- pull_request: 
+    branches: ["main"]
+
+jobs:
+  AnsibleLint:
+    runs-on: ubuntu-latest 
+
+    steps:
+    - name: Check code out from github
+      uses: actions/checkout@v3
+    - name: lint ansible playbook playbook.yml
+      uses: ansible/ansible-lint
