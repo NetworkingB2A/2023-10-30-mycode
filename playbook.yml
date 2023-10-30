@@ -2,6 +2,7 @@
 - name: Monday morning review
   connection: local
   hosts: ansibleController
+  gather_facts: False
 
   tasks:
 
@@ -12,4 +13,4 @@
 
     - name: Display results
       ansible.builtin.debug:
-        var: results
+        var: results 
