@@ -12,4 +12,4 @@ jobs:
     - name: Check code out from github
       uses: actions/checkout@v3
     - name: lint ansible playbook playbook.yml
-      uses: ansible/ansible-lint
+      uses: ansible/ansible-lint-action@main
