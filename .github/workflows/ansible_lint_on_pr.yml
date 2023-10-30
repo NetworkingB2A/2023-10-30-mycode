@@ -2,8 +2,6 @@ name: ansible playbook linting
 on:
   pull_request: 
     branches: ["main"]
-    paths:
-      - './playbook.yml'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -15,4 +13,4 @@ jobs:
     - name: Check code out from github
       uses: actions/checkout@v3
     - name: lint ansible playbook playbook.yml
-      uses: ansible/ansible-lint-action@main
+      uses: ansible/ansible-lint@main
