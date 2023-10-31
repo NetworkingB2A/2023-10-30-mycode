@@ -14,3 +14,7 @@
     - name: Display results
       ansible.builtin.debug:
         var: results
+
+    - name: Display results
+      ansible.builtin.debug:
+        msg: "Welcome to vault 124"
